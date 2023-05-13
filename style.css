@@ -1,0 +1,192 @@
+html {
+  background: black;
+}
+
+.overflow {
+  overflow: hidden;
+}
+
+@keyframes glow {
+	0%   {text-shadow: 0px 0px 5px #1cff9f;}
+  100%  {text-shadow: 0px 0px 30px #1cff9f;}
+}
+
+@font-face {
+  font-family: "UnifrakturMaguntia";
+  src:
+    url("_assets/UnifrakturMaguntia.ttf");
+}
+
+@font-face {
+  font-family: "UnifrakturMaguntia21";
+  src:
+    url("_assets/UnifrakturMaguntia21.ttf");
+}
+
+@font-face {
+  font-family: "AUTHENTIC SANS Condensed";
+  src:
+    url("_assets/AUTHENTICSans-Condensed-90.otf");
+}
+
+.video-page {
+  background-color: #000;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.image-bg {
+  position: fixed;
+  left: -100%;
+  bottom: 0;
+  z-index: -100;
+}
+
+body {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #86ca92;
+
+}
+
+a:visited {
+    text-decoration: none;
+    color: #86ca92;
+
+}
+
+#Virtual {
+  font-family: UnifrakturMaguntia21;
+  text-align: center;
+  font-size: 6em;
+  line-height:1em;
+  color: #1cff9f;
+/*  text-shadow: 0px 0px 5px #1cff9f;*/
+  margin: 0;
+  padding: 0;
+  animation-name: glow;
+/*  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;*/
+}
+
+#Fantasy {
+  font-family: UnifrakturMaguntia;
+  text-align: center;
+  font-size: 6em;
+  line-height:1em;
+  color: #1cff9f;
+/*  text-shadow: 0px 0px 5px #1cff9f;*/
+  margin: 0;
+  padding: 0;
+/*  animation-name: glow;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;*/
+}
+#Joey {
+  text-align: center;
+  padding: auto;
+  font-size: 1em;
+  font-family: Times;
+}
+
+.introduction {
+	font-family: UnifrakturMaguntia21;
+	text-align: center;
+	font-size: 5em;
+	line-height:1em;
+	color: #86ca92;
+/*	text-shadow: 0px 0px 5px #86ca92;*/
+	margin: 0;
+  padding: .5em;
+}
+
+.head {
+  color:white;
+  font-family: AUTHENTIC SANS Condensed;
+  font-size: 1.2em;
+  margin: 0;
+  padding: .2em;
+}
+
+.caption {
+  color:white;
+  font-family: AUTHENTIC SANS Condensed;
+  font-size: .8em;
+  margin: 0;
+  padding: 0 .2em 0 0;
+}
+
+.caption-sm {
+  color:white;
+  font-family: AUTHENTIC SANS Condensed;
+  font-size: .6em;
+  margin: 0;
+  padding: 0 .2em 0 0;
+}
+
+.manifesto {
+  font-family: AUTHENTIC Sans Condensed;
+  font-size: 4.5em;
+  text-align: center;
+  line-height: 10em;
+  color: yellow;
+  -webkit-text-stroke: .02em black;
+}
+
+.container {
+  position: relative;
+  justify-content: center;
+  width: 100%;
+}
+
+.Video {
+  position: fixed;
+  left: 0;
+  top: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -100;
+}
+
+.Video-center {
+  position: absolute;
+  left: -50%;
+  top: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -100;
+}
+
+
+#frame1 {
+	background: red;
+}
+
+#frame2 {
+	background: blue;
+}
+
+#frame3 {
+	background: green;
+}
+
+#frame4 {
+	background: purple;
+}
+
+#frame5 {
+	background: yellow;
+}
