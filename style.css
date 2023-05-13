@@ -14,19 +14,19 @@ html {
 @font-face {
   font-family: "UnifrakturMaguntia";
   src:
-    url("_assets/UnifrakturMaguntia.ttf");
+    url("assets/UnifrakturMaguntia.ttf");
 }
 
 @font-face {
   font-family: "UnifrakturMaguntia21";
   src:
-    url("_assets/UnifrakturMaguntia21.ttf");
+    url("assets/UnifrakturMaguntia21.ttf");
 }
 
 @font-face {
   font-family: "AUTHENTIC SANS Condensed";
   src:
-    url("_assets/AUTHENTICSans-Condensed-90.otf");
+    url("assets/AUTHENTICSans-Condensed-90.otf");
 }
 
 .video-page {
