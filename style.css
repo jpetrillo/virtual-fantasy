@@ -2,10 +2,6 @@ html {
   background: black;
 }
 
-.overflow {
-  overflow: hidden;
-}
-
 /*@keyframes glow {
 	0%   {text-shadow: 0px 0px 5px #1cff9f;}
   100%  {text-shadow: 0px 0px 30px #1cff9f;}
@@ -85,13 +81,16 @@ body {
 a {
     text-decoration: none;
     color: #86ca92;
-
 }
 
 a:visited {
     text-decoration: none;
     color: #86ca92;
+}
 
+.link {
+    text-decoration: none;
+    color: #86ca92 !important;
 }
 
 #Virtual {
@@ -193,11 +192,10 @@ a:visited {
     font-variation-settings: "DCAY" 100;
     animation: decay 10s infinite ease-in-out;
     color: white;
-    text-align: center;
-    font-size: 3em;
+    text-align: left;
+    font-size: 2em;
     line-height: 1em;
     text-rendering: geometricPrecision;
-
 }
 
 .new-horizons-sm {
@@ -205,32 +203,32 @@ a:visited {
     font-variation-settings: "DCAY" 100;
     animation: decay 10s infinite ease-in-out;
     color: white;
-    text-align: center;
-    font-size: 1em;
+    text-align: left;
+    font-size: .8em;
     line-height: 1em;
     text-rendering: geometricPrecision;
-
 }
 
-.header-container {
-  position: relative;
+#nh-container {
   margin: 0;
-  padding: 0;
+  padding-left: 1em;
 }
 
-.header {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin: 0;
-  padding: 0;
-}
 
 
 .Video {
   position: fixed;
   left: 0;
   top: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -100;
+}
+
+#Cherry {
+    position: fixed;
+  left: 0;
+  bottom: 0;
   min-width: 100%;
   min-height: 100%;
   z-index: -100;
