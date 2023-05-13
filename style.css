@@ -155,11 +155,20 @@ a:visited {
 
 .manifesto {
   font-family: AUTHENTIC Sans Condensed;
-  font-size: 4.5em;
+  font-size: 3.8em;
   text-align: center;
-  line-height: 10em;
+  line-height: 3em;
   color: yellow;
   -webkit-text-stroke: .02em black;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  bottom: 0;
+}
+
+#m-caption {
+  padding: .5em;
+  color: yellow;
 }
 
 .Video {
