@@ -33,12 +33,17 @@ html {
   background-color: #000;
 }
 
-.container {
+/*.container {
+  display: flex;
+  flex-direction: column;
   position: relative;
   width: 100%;
+  height: 100vh;
   padding: 0;
   margin: 0;
-}
+  justify-content: center;
+  align-items: center;
+}*/
 
 .image-bg {
   position: fixed;
@@ -97,9 +102,12 @@ a:visited {
 }
 #Joey {
   text-align: center;
-  padding: auto;
+  margin: auto;
   font-size: 1em;
   font-family: Times;
+  margin: 0;
+  padding-top: .5em;
+  letter-spacing: .3em;
 }
 
 .introduction {
@@ -144,12 +152,6 @@ a:visited {
   line-height: 10em;
   color: yellow;
   -webkit-text-stroke: .02em black;
-}
-
-.container {
-  position: relative;
-  justify-content: center;
-  width: 100%;
 }
 
 .Video {
