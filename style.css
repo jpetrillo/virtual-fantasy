@@ -6,9 +6,21 @@ html {
   overflow: hidden;
 }
 
-@keyframes glow {
+/*@keyframes glow {
 	0%   {text-shadow: 0px 0px 5px #1cff9f;}
   100%  {text-shadow: 0px 0px 30px #1cff9f;}
+}*/
+
+@keyframes decay {
+  0% {
+    font-variation-settings: "DCAY" 0;
+  }
+  50% {
+    font-variation-settings: "DCAY" 200;
+  }
+  100% {
+    font-variation-settings: "DCAY" 0;
+  }  
 }
 
 @font-face {
@@ -34,6 +46,11 @@ html {
   font-family: "Times Dot";
   src:
     url("assets/Times-Dot.otf");
+}
+
+@font-face {
+    font-family: "New Horizons";
+    src: url("assets/NewHorizonsVF.woff2") format("woff2-variations");
 }
 
 
@@ -142,7 +159,7 @@ a:visited {
   font-family: AUTHENTIC SANS Condensed;
   font-size: .8em;
   margin: 0;
-  padding: 0 .2em 0 0;
+  padding: .5em 1em 0em 1em;
 }
 
 .caption-sm {
@@ -170,6 +187,45 @@ a:visited {
   padding: .5em;
   color: yellow;
 }
+
+.new-horizons {
+    font-family:"New Horizons", Times;
+    font-variation-settings: "DCAY" 100;
+    animation: decay 10s infinite ease-in-out;
+    color: white;
+    text-align: center;
+    font-size: 3em;
+    line-height: 1em;
+    text-rendering: geometricPrecision;
+
+}
+
+.new-horizons-sm {
+    font-family:"New Horizons", Times;
+    font-variation-settings: "DCAY" 100;
+    animation: decay 10s infinite ease-in-out;
+    color: white;
+    text-align: center;
+    font-size: 1em;
+    line-height: 1em;
+    text-rendering: geometricPrecision;
+
+}
+
+.header-container {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: 0;
+  padding: 0;
+}
+
 
 .Video {
   position: fixed;
