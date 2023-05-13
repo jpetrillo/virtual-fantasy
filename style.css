@@ -29,6 +29,14 @@ html {
     url("assets/AUTHENTICSans-Condensed-90.otf");
 }
 
+
+@font-face {
+  font-family: "Times Dot";
+  src:
+    url("assets/Times-Dot.otf");
+}
+
+
 .video-page {
   background-color: #000;
 }
@@ -104,7 +112,7 @@ a:visited {
   text-align: center;
   margin: auto;
   font-size: 1em;
-  font-family: Times;
+  font-family: Times Dot, Times;
   margin: 0;
   padding-top: .5em;
   letter-spacing: .3em;
