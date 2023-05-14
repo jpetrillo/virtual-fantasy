@@ -1,11 +1,67 @@
-html {
-  background: black;
-}
-
 /*@keyframes glow {
 	0%   {text-shadow: 0px 0px 5px #1cff9f;}
   100%  {text-shadow: 0px 0px 30px #1cff9f;}
 }*/
+
+@keyframes times-animation {
+  0% {
+    font-family: "Times Heart";
+    color: #ff00f6;
+
+  }
+
+  20% {
+    font-family: "Times Bloom";
+    color: #00fcff;
+  }
+
+  40% {
+    font-family: "Times Smile";
+    color: #fff600;
+
+  }
+
+  60% {
+    font-family: "Times Star";
+    color: #50ff00;
+  }            
+
+  80% {
+    font-family: "Times Sun";
+    color: #ff0000;
+  } 
+
+  100% {
+    font-family: "Times Heart";
+    color: #ff00f6;
+  }       
+}
+
+@keyframes color-animation {
+  0% {
+  }
+
+  20% {
+    color: cyan;
+  }
+
+  40% {
+      color: yellow;
+  }
+
+  60% {
+    color: green;
+  }            
+
+  80% {
+    color: red;
+  } 
+
+  100% {
+    color: magenta;
+  }       
+}
+
 
 @keyframes decay {
   0% {
@@ -45,6 +101,36 @@ html {
 }
 
 @font-face {
+  font-family: "Times Heart";
+  src:
+    url("assets/Times-Heart-Roman.otf");
+}
+
+@font-face {
+  font-family: "Times Bloom";
+  src:
+    url("assets/Times-Bloom-Roman.otf");
+}
+
+@font-face {
+  font-family: "Times Smile";
+  src:
+    url("assets/Times-Smile-Roman.otf");
+}
+
+@font-face {
+  font-family: "Times Star";
+  src:
+    url("assets/Times-Star-Roman.otf");
+}
+
+@font-face {
+  font-family: "Times Sun";
+  src:
+    url("assets/Times-Sun-Roman.otf");
+}
+
+@font-face {
     font-family: "New Horizons";
     src: url("assets/NewHorizonsVF.woff2") format("woff2-variations");
 }
@@ -78,9 +164,17 @@ body {
   margin-right: 0;
 }
 
+h1, h2 {
+  font-weight: normal;
+}
+
 a {
     text-decoration: none;
     color: #86ca92;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 a:visited {
@@ -156,6 +250,7 @@ a:visited {
 .caption {
   color:white;
   font-family: AUTHENTIC SANS Condensed;
+  font-weight: normal;
   font-size: .8em;
   margin: 0;
   padding: .5em 1em 0em 1em;
@@ -171,6 +266,7 @@ a:visited {
 
 .manifesto {
   font-family: AUTHENTIC Sans Condensed;
+  font-weight: normal;
   font-size: 3.8em;
   text-align: center;
   line-height: 3em;
@@ -185,6 +281,52 @@ a:visited {
 #m-caption {
   padding: .5em;
   color: yellow;
+  font-weight: normal;
+}
+
+#container-times {
+  padding: .2em 0em 0em .1em;
+  margin: 0;
+}
+
+.h-times, .h2-times {
+  font-size: 8em;
+  margin: 0;
+  color: white;
+  line-height: 1em;
+  animation: times-animation;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  font-weight: normal;
+}
+
+
+.h2-times {
+    padding-left:2%;
+}
+
+.p-times, .c-times {
+  font-size: 2em;
+  line-height: 0em;
+  margin: 0;
+  padding-top: 0;
+  padding-right: 0;
+  color: white;
+  font-family: "Times Heart";
+  animation: times-animation;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.c-times {
+  padding-bottom: 1em;
+}
+
+.p-times {
+  padding-left:2%;
+  padding-bottom: 5em;
 }
 
 .new-horizons {
@@ -213,8 +355,6 @@ a:visited {
   margin: 0;
   padding-left: 1em;
 }
-
-
 
 .Video {
   position: fixed;
