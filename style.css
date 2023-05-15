@@ -172,7 +172,18 @@ a:visited {
 
 .link {
     text-decoration: none;
-    color: #86ca92 !important;
+    color: #86ca92;
+}
+
+#CC {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 50px;
+}
+
+.CC_icons {
+  padding-right: .1em;
 }
 
 #Virtual {
