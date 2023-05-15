@@ -273,17 +273,29 @@ a:visited {
 }
 
 .times-container {
-  padding: .2em 0em 3em .5em;
+  padding: .5em 6em 3em .5em;
   margin: 0;
 }
 
-.h-times, .h2-times {
-  font-size: 8em;
+.h-times, .h2-times, .h2-times_bloom, .h2-times_heart {
+  font-size: 6em;
   margin: 0;
   padding: 0;
-  color: white;
-  line-height: 1em;
+  line-height: .95em;
   font-weight: normal;
+}
+
+.h-times, .h2-times {
+}
+
+.h2-times_bloom, .p-times_bloom {
+  font-family: "Times Bloom";
+  color: black;
+}
+
+.h2-times_heart, .p-times_heart {
+  font-family: "Times Heart";
+  color: black;
 }
 
 .p-times, .h-times {
@@ -293,14 +305,14 @@ a:visited {
   animation-timing-function: linear;
 }
 
-.p-times, {
+.p-times, .p-times_bloom, .p-times_heart {
   font-size: 1em;
   line-height: 1em;
   margin: 0;
-  padding: 0;
-  color: white;
-  font-family: "Times Heart";
+  padding: .5em 0 1em 0;
 }
+
+
 
 .new-horizons {
     font-family:"New Horizons", Times;
